@@ -13,6 +13,7 @@ $(document).ready(function () {
   $("#logOutBtn").on("click", function (event) {
     firebase.auth().signOut().then(function () {
       console.log("User has signed out");
+      window.location = 'index.html'; //After successful login, user will be redirected to index.html
     }).catch(function (error) {
       // An error happened.
       console.log("signout error");
