@@ -36,7 +36,9 @@ $("#googleBtn").on("click", function (event) {
         console.log(user);
 
         localStorage.clear();
-        headerName = localStorage.setItem("name", user.displayName);
+        localStorage.setItem("name", user.displayName);
+        $("#userId").text(localStorage.getItem("name"));
+
 
 
         

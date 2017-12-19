@@ -16,6 +16,8 @@ $(document).ready(function () {
     var database = firebase.database();
     var user;
 
+    $("#userId").text(localStorage.getItem("name"));
+
 
     //updating profile info to firebase
     $("#update-btn").on("click", function (event) {
