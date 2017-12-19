@@ -41,21 +41,22 @@ $(document).ready(function () {
             rank: rank,
             zipcode: zip,
             hobbies: hobbies
-            
+
         };
         database.ref("/userProfiles").push(newProfile);
-        
-       
+
+        $("#first_name").val("");
+        $("#last_name").val("");
+        $("#email").val("");
+        $("#branch").val("");
+        $("#rank").val("");
+        $("#zip").val("");
+        $("#interests").val("");
+
 
     });
 
-    $("#first_name").val("");
-    $("#last_name").val("");
-    $("#email").val("");
-    $("#branch").val("");
-    $("#rank").val("");
-    $("#zip").val("");
-    $("#interests").val("");
+
 
     database.ref("/userProfiles").on("child_added", function (childSnapshot, prevChildKey) {
         //if (childSnapshot.val().uid === result.user.uid) {
@@ -78,10 +79,10 @@ $(document).ready(function () {
 
 $("#signOutBtn").on("click", function (event) {
     firebase.auth().signOut().then(function () {
-      console.log("User has signed out");
-      window.location = 'index.html'; //After successful login, user will be redirected to index.html
+        console.log("User has signed out");
+        window.location = 'index.html'; //After successful login, user will be redirected to index.html
     }).catch(function (error) {
-      // An error happened.
-      console.log("signout error");
+        // An error happened.
+        console.log("signout error");
     });
-  });
+});
