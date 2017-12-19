@@ -42,15 +42,19 @@ $(document).ready(function () {
             
         };
         database.ref("/userProfiles").push(newProfile);
-        $("#first_name").val("");
-        $("#last_name").val("");
-        $("#email").val("");
-        $("#branch").val("");
-        $("#rank").val("");
-        $("#zip").val("");
-        $("#interests").val("");
+        
+       
 
     });
+
+    $("#first_name").val("");
+    $("#last_name").val("");
+    $("#email").val("");
+    $("#branch").val("");
+    $("#rank").val("");
+    $("#zip").val("");
+    $("#interests").val("");
+    
     database.ref("/userProfiles").on("child_added", function (childSnapshot, prevChildKey) {
         //if (childSnapshot.val().uid === result.user.uid) {
         console.log(childSnapshot.val());
