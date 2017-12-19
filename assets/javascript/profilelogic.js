@@ -68,7 +68,7 @@ $(document).ready(function () {
         var zip = childSnapshot.val().zipcode;
         var hobbies = childSnapshot.val().hobbies;
 
-        
+        $("userId").text(firstName);
 
 
     });
