@@ -20,7 +20,7 @@ $(document).ready(function () {
 
   firebase.initializeApp(config);
 
-  $("#userId").text(localStorage.getItem("name"));
+  $("#userId").text("Hello, " + localStorage.getItem("name"));
 
   //declaring token website to cature url
   //for retrieving the Meet Up access token
