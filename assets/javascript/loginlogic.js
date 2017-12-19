@@ -18,6 +18,7 @@ firebase.initializeApp(config);
 var provider = new firebase.auth.GoogleAuthProvider();
 var user;
 
+
 $("#googleBtn").on("click", function (event) {
     event.preventDefault();
 
@@ -31,6 +32,8 @@ $("#googleBtn").on("click", function (event) {
         user = result.user;
         console.log(user.displayName + " is signed in.");
         console.log(user);
+
+        loginName = user.displayName
         // ...
     }).catch(function (error) {
         // Handle Errors here.
