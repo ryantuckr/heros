@@ -23,20 +23,22 @@ $(document).ready(function () {
 
         console.log("Profile button was clicked");
 
-        var firstName = $("#fn-input").val();
-        var lastName = $("#ln-input").val();
-        var branch = $("#branch-input").val();
-        var rank = $("#rank-input").val();
-        var zip = $("#zipcode-input").val();
-        var hobbies = $("#hobbies-input").val();
+        var firstName = $("#first_name").val();
+        var lastName = $("#last_name").val();
+        var email = $("#email").val();
+        var branch = $("#branch").val();
+        var rank = $("#rank").val();
+        var zip = $("#zip").val();
+        var hobbies = $("#interests").val();
         //create a temp object to pass to database
         var newProfile = {
             firstname: firstName,
             lastname: lastName,
+            email: email;
             branch: branch,
             rank: rank,
             zipcode: zip,
-            hobbies: hobbies,
+            hobbies: hobbies
             
         };
         database.ref("/userProfiles").push(newProfile);
@@ -48,6 +50,7 @@ $(document).ready(function () {
         // Store everything into a variable.    
         var firstName = childSnapshot.val().firstname;
         var lastName = childSnapshot.val().lastname;
+        var email = childSnapshot.val().email;
         var branch = childSnapshot.val().branch;
         var rank = childSnapshot.val().rank;
         var zip = childSnapshot.val().zipcode;
