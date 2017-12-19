@@ -1,0 +1,130 @@
+body {
+    font-family: 'Alegreya', serif;
+    font-size: 24px;
+}
+
+#modal1 {
+    border-radius: 30px;
+    height: 450px;
+    width: 800px;
+    overflow: auto;
+    background-color: transparent;
+}
+
+.modal-content {
+    background-color: rgb(119, 118, 118);
+    font-size: medium;
+    color: rgb(3, 3, 48);
+}
+
+.nav-wrapper {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(darkgrey), black);
+    background-image: -webkit-linear-gradient(top, darkgrey, black);
+    background-image: -moz-linear-gradient(top, darkgrey, black);
+    background-image: linear-gradient(to bottom, darkgrey, black);
+}
+
+.nav-content {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(darkgrey));
+    background-image: -webkit-linear-gradient(top, black, (darkgrey));
+    background-image: -moz-linear-gradient(top, black, (darkgrey));
+    background-image: linear-gradient(to bottom, black, (darkgrey));
+}
+
+.tab {
+    color: black;
+}
+
+#info {
+    margin-bottom: -46px;
+}
+
+#nameStyle {
+    color: rgb(94, 6, 6);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#nameStyle2 {
+    color: rgb(94, 6, 6);
+    font-weight: bold;
+}
+
+#loginBody {
+    background-image: url("../images/loginimg.png");
+    background-size: cover;
+}
+
+.btn {
+    background-color: #283439;
+}
+
+#loginCard {
+    margin-top: 300px;
+    background-image: linear-gradient(black, darkgrey, black);
+}
+
+.card-content {
+    background-image: linear-gradient(black, darkgrey);
+}
+
+.card-action {
+    background-image: linear-gradient(darkgrey, black);
+}
+
+.waves-effect {
+    background-image: linear-gradient(darkgrey, black);
+}
+
+.card-panel {
+    background-image: linear-gradient(black, darkgrey, black);
+}
+
+.nav-wrapper {
+    height: 100px !important;
+}
+
+#meetText {
+    color: white;
+    padding: 20px;
+    margin-top: 107px;
+    background-image: linear-gradient(rgba(164, 164, 164, .5), rgba(0, 0, 0, .5));
+    border-radius: 18px;
+}
+
+.text {
+    color: white;
+}
+
+#jobText {
+    color: white;
+    padding: 20px;
+    margin-top: 25px;
+    background-image: linear-gradient(rgba(164, 164, 164, .5), rgba(0, 0, 0, .5));
+    border-radius: 18px;
+}
+
+.profileInputs {
+    color: white;
+    padding: 20px;
+    background-image: linear-gradient(rgba(164, 164, 164, .5), rgba(0, 0, 0, .5));
+}
+
+input {
+    color: white;
+}
+
+.page-footer {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(darkgrey), black);
+    background-image: -webkit-linear-gradient(top, darkgrey, black);
+    background-image: -moz-linear-gradient(top, darkgrey, black);
+    background-image: linear-gradient(to bottom, darkgrey, black);
+}
+
+#video {
+    margin-top: 15px;
+}
+
+.collection-item{
+    color:white !important;
+}

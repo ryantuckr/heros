@@ -1,0 +1,141 @@
+<!DOCTYPE>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/connect.ico">
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <!-- Icon link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- css link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--materialize link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
+
+    <title>4 our Heroes Index</title>
+
+
+
+</head>
+<header>
+
+
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="landing.html" class="brand-logo">
+                <img src="assets/images/logo.png" width="150" height="150" </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <!-- Dropdown Trigger  -->
+                    <li>
+                        <a class="dropdown-button" data-activates="dropdown1">
+                            <i class="large material-icons right">map</i>
+                        </a>
+                    </li>
+                    <!-- Dropdown Structure -->
+                    <ul id="dropdown1" class="dropdown-content" style="background-image: linear-gradient(black, darkgrey,black)"
+                        "color:white">
+                        <li>
+                            <a href="profile.html">Profile</a>
+                        </li>
+                        <li>
+                            <a href="resource.html">Resources</a>
+                        </li>
+
+                    </ul>
+
+
+                    <li>
+                        <a class="waves-effect waves-light btn" id="signOutBtn">Sign out</a>
+                    </li>
+                    <div class="row" id="info">
+                        <div style="font-size:18px;">
+                            <p id="userId">
+                                <em> name rank, branch</em>
+                            </p>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+
+
+</header>
+
+
+<body id="indexBody">
+    <div class="parallax-container" style="width:1910px">
+        <div class="parallax" id="para1">
+            <img src="assets/images/indeximg.jpg">
+        </div>
+    </div>
+    <div class="section white" style="background-image: linear-gradient(black, darkgrey,black)">
+        <div class="row container">
+            <div class="col s6" id="jobs">
+                <div class="input-field">
+                    <input placeholder="Search a location for jobs" type="text" class="text validate" id="locationInput">
+                </div>
+                <p class="z-depth-5" id="jobText">
+                    <a class="waves-effect waves-light btn" id="addLocation">
+                        <i class="material-icons left">work</i>Submit</a>
+
+
+
+                </p>
+            </div>
+            <div class="col s6" id="meetUp" style="margin-bottom:0px">
+
+
+
+                <p class="z-depth-5" id="meetText">
+
+                    <a class="waves-effect waves-light btn" id="meetBtn">
+                        <i class="material-icons left">group</i>Meet Up</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax" id="para2">
+            <img src="assets/images/indeximg2.jpg" height="1950px">
+        </div>
+    </div>
+
+
+    <!--Moment Link here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment.min.js"></script>
+
+    <!--FireBase Link here -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+    <!--JQ link here-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <!-- Materialize link here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+    </script>
+
+    <!--JS link here -->
+    <script type="text/javascript" src="assets/javascript/logic.js">
+    </script>
+
+</body>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8 l6">
+
+                <div class="footer-copyright center-align">
+                    <div>
+                        © 2017 Three Beards and a Lady
+
+                    </div>
+                </div>
+</footer>
