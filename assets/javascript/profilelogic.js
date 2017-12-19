@@ -34,7 +34,7 @@ $(document).ready(function () {
         var newProfile = {
             firstname: firstName,
             lastname: lastName,
-            email: email;
+            email: email,
             branch: branch,
             rank: rank,
             zipcode: zip,
