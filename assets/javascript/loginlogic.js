@@ -34,6 +34,8 @@ $("#googleBtn").on("click", function (event) {
         console.log(user);
 
         loginName = user.displayName
+
+        
         // ...
     }).catch(function (error) {
         // Handle Errors here.
