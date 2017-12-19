@@ -37,7 +37,7 @@ $(document).ready(function () {
             rank: rank,
             zipcode: zip,
             hobbies: hobbies,
-            uid: user.uid
+            
         };
         database.ref("/userProfiles").push(newProfile);
     });
