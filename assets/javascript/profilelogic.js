@@ -54,7 +54,7 @@ $(document).ready(function () {
     $("#rank").val("");
     $("#zip").val("");
     $("#interests").val("");
-    
+
     database.ref("/userProfiles").on("child_added", function (childSnapshot, prevChildKey) {
         //if (childSnapshot.val().uid === result.user.uid) {
         console.log(childSnapshot.val());
@@ -68,6 +68,7 @@ $(document).ready(function () {
         var zip = childSnapshot.val().zipcode;
         var hobbies = childSnapshot.val().hobbies;
 
+        
 
 
     });
