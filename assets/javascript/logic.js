@@ -8,8 +8,18 @@ $(document).ready(function () {
     fullWidth: true
   });
 
+  var config = {
+    apiKey: "AIzaSyD9zUxSiYvAJ5aS_EhGLIx_MWILBbJy4TY",
+    authDomain: "project-1-530e9.firebaseapp.com",
+    databaseURL: "https://project-1-530e9.firebaseio.com",
+    projectId: "project-1-530e9",
+    storageBucket: "project-1-530e9.appspot.com",
+    messagingSenderId: "441047690869"
+  };
 
- 
+
+  firebase.initializeApp(config);
+
 
   //declaring token website to cature url
   //for retrieving the Meet Up access token
@@ -134,8 +144,8 @@ $(document).ready(function () {
 
 
 
- // signout function
- $("#signOutBtn").on("click", function (event) {
+// signout function
+$("#signOutBtn").on("click", function (event) {
   firebase.auth().signOut().then(function () {
     console.log("User has signed out");
     window.location = 'index.html'; //After successful login, user will be redirected to index.html
