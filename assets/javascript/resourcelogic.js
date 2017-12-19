@@ -10,7 +10,7 @@ var config = {
 
   firebase.initializeApp(config);
 
-  $("#userId").text("Hello, " + localStorage.getItem("name"));
+  $("#userId").text(localStorage.getItem("name"));
 
 
   // signout function
