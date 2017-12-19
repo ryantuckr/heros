@@ -17,6 +17,8 @@ firebase.initializeApp(config);
 
 var provider = new firebase.auth.GoogleAuthProvider();
 var user;
+var headerName;
+
 
 
 $("#googleBtn").on("click", function (event) {
@@ -33,7 +35,9 @@ $("#googleBtn").on("click", function (event) {
         console.log(user.displayName + " is signed in.");
         console.log(user);
 
-        loginName = user.displayName
+        localStorage.clear();
+        headerName = localStorage.setItem("name", user.displayName);
+
 
         
         // ...

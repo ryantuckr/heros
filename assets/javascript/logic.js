@@ -139,11 +139,6 @@ $(document).ready(function () {
 });
 
 
-
-
-
-
-
 // signout function
 $("#signOutBtn").on("click", function (event) {
   firebase.auth().signOut().then(function () {
